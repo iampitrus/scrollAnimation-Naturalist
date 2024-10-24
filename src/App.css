@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  @apply flex h-screen w-full justify-center -z-10 items-center;
+  background: url("./assets/bg.png");
+}
+
+#about {
+  @apply relative flex justify-between items-center gap-6 pr-24 h-screen;
+  background: linear-gradient(
+    45deg,
+    rgba(158, 121, 104, 1) 20%,
+    rgba(151, 83, 54, 1) 70%,
+    #200a02 100%
+  );
+}
+
+.btn {
+  @apply rounded-md px-4 py-2 bg-[#200a02] absolute bottom-[13%] right-[45%];
+}
